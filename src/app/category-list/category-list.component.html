@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let category of categories" routerLinkActive="active-category">
+        <a [routerLink]="['/category/'+category.id]"> {{ category.name }} </a>
+    </li>
+</ul>
+<div class="add-button">
+    <span (click)="addCategory()"> + </span>
+</div>
+

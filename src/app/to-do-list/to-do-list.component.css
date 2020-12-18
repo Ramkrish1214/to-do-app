@@ -1,0 +1,15 @@
+.todos {
+  display: flex;
+  min-height: 200px;
+  border: 1px solid;
+}
+
+.items {
+  border-left: 1px solid;
+  flex-grow: 1;
+}
+
+.category,
+.items {
+  position: relative;
+}

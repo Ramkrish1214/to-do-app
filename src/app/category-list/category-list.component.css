@@ -1,0 +1,16 @@
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+  border-bottom: 1px solid;
+}
+li.active-category {
+  background: lightblue !important;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+}
