@@ -4,7 +4,7 @@
         <li *ngFor="let item of todoItems"> 
             <input type="checkbox" [checked]="item.finished" [value]="item.id" id="item-{{item.id}}" (change)="itemStatus($event, item.id)">
             <label for="item-{{item.id}}" [ngClass]="{'item-finished': item.finished}"> {{ item.name }} </label>
-            <div class="delete-button"> <span (click)="deleteItem(item.id, selectedCategory.id)"> X </span></div>
+            <div class="delete-button"> <span (click)="deleteItem(item.id)"> X </span></div>
         </li>
     </ul>
     <div class="add-button">
